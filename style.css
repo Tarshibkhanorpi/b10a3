@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+    /* background-color: rgb(136, 170, 101); */
+}
+
+
+
+/* nav-bar style */
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    margin-right: 150px;
+    margin-left:150px;
+      
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color:#ff4b2b;
+}
+.nav-links{
+    list-style:none;
+    display: flex;
+    border-radius:20px;
+    gap:30px;
+    padding: 5px 5px;
+    font-weight: 800;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #b32828;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ff4b2b;
+}
+#menu-btn{
+    display: none;
+}
+
+/* banner style */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    position: relative;
+    margin-right: 150px;
+    margin-left:150px;
+}
+.banner-content{
+    max-width: 60%;
+    margin-top: -100px;
+}
+.banner-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.8;
+}
+.banner-content .shape {
+  font-family: "Brush Script MT", cursive;
+  font-size: 3.2rem;
+  color: #ff4b2b;
+}
+.banner-content p {
+  margin: 20px 0;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.btn-group {
+  display: flex;
+  gap: 20px;
+}
+.btn {
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn.join {
+  background-color: #ff4b2b;
+  color: #fff;
+}
+
+.btn.join:hover {
+  background-color: #e24326;
+}
+.btn.download {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn.download:hover {
+  background: #625f5f;
+  color: #000;
+}
+
+/* banner image */
+.banner-image{
+    position:relative;
+}
+.banner-image img {
+  width: 380px;
+  border-radius: 10px;
+}
+.tag {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 12px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dot {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #ff4b2b;
+}
+.tag span {
+  font-size: 1.7rem;
+  font-weight: 900;
+  display: block;
+  color: #fff;
+  
+}
+.tag p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+/* Specific positions */
+.tag-left {
+  bottom: 20px;
+  left: -30px;
+}
+
+.tag-right {
+position: absolute;
+ background: rgba(193, 69, 69, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 12px 20px;
+  text-align: center;
+  top: 120px;
+  right: -10px;
+}
+.tag-right span{
+     font-size: 1.7rem;
+  font-weight: 900;
+  display: block;
+  color: #fff;
+}
+.tag-right p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* habit er section style */
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* habits text section style */
+
+.habits-text {
+  text-align: center;
+  margin-bottom: 2.75rem; /* 44px */
+  padding: 0 1.25rem; /* 20px */
+}
+
+.habits-text h1 {
+  font-size: 3.125rem; /* 50px */
+  color: blue;
+  font-weight: 900;
+  margin-bottom: 1.25rem; /* 20px */
+}
+
+.habits-text p {
+  font-size: 1rem; /* 16px */
+  font-weight: 500;
+  color: #bfbfbf;
+  line-height: 1.6;
+  max-width: 37.5rem; /* 600px */
+  margin: 0 auto 2.5rem; /* bottom 40px */
+}
+
+
+/* habits card section style */
+.habits{
+    max-width: 1440px;
+    margin-left: 152px;
+    margin-right: 148px;
+    padding-left:30px;
+}
+.habits-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin:0 auto;
+}
+.card h3,.card p{
+    text-align: center;
+}
+.card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%; /* যদি round করতে চাও */
+}
+
+
+/* nav ar banner er responsive */
+/* Medium Screen (Tablet) */
+@media (max-width: 992px) {
+
+  /* ✅ Navbar layout */
+  .full-website{
+    max-width: 992px;
+    
+    
+}
+  .navbar {
+    justify-content: space-between;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+  }
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr; /* এক ফ্রেমে নিচে নিচে */
+    text-align: center;
+    align-items: center;
+    margin-top: 120px; /* navbar নিচে জায়গা */
+    gap: 40px;
+  }
+  
+  .banner-content {
+    max-width: 90%;
+    justify-self: center;
+  }
+
+  .banner-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-image {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 576px) {
+
+  /* ✅ পুরো ওয়েবসাইট wrapper */
+  .full-website {
+    max-width: 576px;
+  }
+
+  /* ✅ Navbar layout */
+  .navbar {
+    width: 400px;
+    display: flex;                     /* flexbox চালু */
+    justify-content: space-around;    /* logo left, icon right */
+    align-items: center;               /* vertically center */
+    padding: 15px 20px;
+    margin-right: 150px;
+    
+
+  }
+
+  /* 🔹 Nav-links গুলো লুকাবে */
+  .nav-links {
+    display: none;
+  }
+
+  /* 🔹 Hamburger icon দেখাবে */
+  #menu-btn {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #c90606;
+  }
+
+  /* 🔹 Logo একটু adjust করলে আরো সুন্দর দেখাবে */
+  .logo {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #ff4b2b;
+  }
+}
+
+/* ✅ বড় স্ক্রিনে normal menu দেখাবে */
+@media (min-width: 577px) {
+  #menu-btn {
+    display: none; /* বড় স্ক্রিনে icon hide */
+  }
+
+  .nav-links {
+    display: flex; /* বড় স্ক্রিনে link দেখাবে */
+    gap: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Banner section vertically সাজানো থাকবে */
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 100px;
+    gap: 30px;
+  }
+
+  .banner-content {
+    max-width: 100%;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .banner-content p {
+    font-size: 0.9rem;
+  }
+ 
+}
+@media (max-width: 992px) {
+
+  /* ✅ Navbar layout */
+  .full-website{
+    max-width: 992px;
+    
+    
+}
+  .navbar {
+    justify-content: space-between;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+  }
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr; /* এক ফ্রেমে নিচে নিচে */
+    text-align: center;
+    align-items: center;
+    margin-top: 120px; /* navbar নিচে জায়গা */
+    gap: 40px;
+  }
+  
+  .banner-content {
+    max-width: 90%;
+    justify-self: center;
+  }
+
+  .banner-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-image {
+    justify-self: center;
+    border: 2px solid black;
+  }
+}
+
+
+/* ✅ Medium screen first (tablets, small laptops) */
+@media (max-width: 992px) {
+  .habits {
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .habits-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* দুইটা কলাম */
+    gap: 1.5rem;
+  }
+
+  .habits-text h1 {
+    font-size: 2rem;
+  }
+
+  .habits-text p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ✅ Small screen (phones) */
+@media (max-width: 576px) {
+  .habits {
+    margin-left:200px;
+    padding: 0.1rem;
+    border:2px solid black;
+  }
+
+  .habits-cards {
+    display: grid;
+    grid-template-columns: 1fr; /* এক কলাম (mobile) */
+    gap: 20px;
+  }
+
+  .habits-text h1 {
+    font-size: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .habits-text p {
+    font-size: 0.8rem;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
