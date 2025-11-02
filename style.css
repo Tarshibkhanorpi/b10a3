@@ -209,6 +209,7 @@ position: absolute;
     margin-left: 152px;
     margin-right: 148px;
     padding-left:30px;
+    margin-bottom: 30px;
 }
 .habits-cards{
     display: grid;
@@ -224,6 +225,302 @@ position: absolute;
   border-radius: 50%; /* যদি round করতে চাও */
 }
 
+/* run a extra mile section style */
+.extra-mile{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a79898;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 2rem 3rem;
+  max-width: 1440px;
+  margin-left: 170px;
+  margin-right: 152px;
+  gap: 2rem
+  
+}
+.extra-content{
+    width: 70%;
+    margin-bottom: 46px;
+  margin-left: 54px;
+  margin-right: 54px;
+  margin-top: 46px;
+}
+.extra-content h1{
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.extra-content p{
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.join-btn{
+     background-color: #ff4b2b;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.extra-img{
+    width: 30%;
+}
+
+.extra-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+/* training style */
+.trainings {
+  max-width: 1440px;
+  margin-left:152px;
+  margin-right: 152px;
+  padding: 0 2rem;
+  color: #7b1919;
+  
+}
+
+.trainings-header h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.trainings-header p {
+  color: #bbb;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Grid layout for cards */
+.training-grid {
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 250px;
+}
+
+
+/* Base card style */
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.card1 div
+{ 
+    position: absolute; 
+    top: 200px; left:50px; 
+}
+ .card2 div
+ { 
+    position: absolute; 
+    left:10px;
+ } 
+.card3 div
+{ 
+    position: absolute; 
+    left:px;
+}
+.card4 div
+{ 
+    position: absolute; 
+    top: 170px;
+    left:20px;
+}
+.card5 div
+{ 
+    position: absolute; 
+    top: 170px;
+    left:20px
+}
+.card6 div
+{ 
+    position: absolute; 
+    top: 170px;
+    left:20px
+}
+/* Each card image */
+.card1 { background-image: url(./images/exercise1.jpg); }
+.card2 { background-image: url(./images/exercise2.png); }
+.card3 { background-image: url(./images/exercise3.png); }
+.card4 { background-image: url(./images/exercise4.png); }
+.card5 { background-image: url(./images/exercise5.jpg); }
+.card6 { background-image: url(./images/exercise6.jpg); }
+
+/* Overlay tint */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  opacity: 0.35;
+  z-index: 1;
+}
+
+.card1::before { background-color: rgba(255, 0, 0, 0.4); }
+.card2::before { background-color: rgba(0, 255, 0, 0.4); }
+.card3::before { background-color: rgba(0, 0, 255, 0.4); }
+.card4::before { background-color: rgba(255, 255, 0, 0.4); }
+.card5::before { background-color: rgba(255, 0, 255, 0.4); }
+.card6::before { background-color: rgba(0, 255, 255, 0.4); }
+
+/* Text */
+.card p {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 2;
+  color: white;
+  font-weight: 600;
+}
+/* bmi calculator section */
+.Bmi-cal {
+  color: rgb(33, 17, 17);
+  padding: 40px 0;
+  margin-bottom: 24px;
+  width: 1600px;
+  height: 900px;
+}
+.bmi-cal-text h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.bmi-cal-text p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+/* container section style */
+.bmi-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: gray;
+  color:white;
+}
+.chart {
+  width: 45%;
+  margin-top: 85px;
+  margin-left: 60px;
+  font-weight: 200;
+}
+.chart h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  margin-right: 120px;
+
+}
+
+.chart table {
+  width: 70%;
+  border-collapse: collapse;
+  height: 65%;
+}
+.chart th, .chart td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #f8dfdf;
+}
+
+.chart th {
+  background-color: gray;
+}
+
+/* calculator bmi section */
+
+
+
+/* Form Section Styles */
+.calculate-bmi {
+  padding: 30px;
+  border-radius: 8px;
+  width: 45%;
+  margin-top: 54px;
+  margin-bottom: 40px;
+  margin-right: 50px;
+
+}
+
+.bmi-title {
+  text-align: start;
+  font-size: 40px;
+  color: rgb(247, 238, 238);
+  margin-bottom: 20px;
+}
+
+.bmi-description {
+  text-align: start;
+  font-size: 15px;
+  color: rgb(206, 188, 188);
+  margin-bottom: 30px;
+}
+
+
+.bmi-form {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+
+.form-input, .form-select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color:  rgba(255, 255, 255, 0.1);
+  color:rgb(237, 227, 227);
+  
+}
+.form-input::placeholder {
+  color:white;  /* Replace this with the desired color */
+}
+
+.form-input {
+  width: 100%;
+}
+
+.form-select {
+  width: 100%;
+}
+.group3{
+  grid-column: span 2;
+}
+.form-button {
+  background-color: #ff6f61;
+  color: white;
+  font-size: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.form-button:hover {
+  background-color: #e55e50;
+}
 
 /* nav ar banner er responsive */
 /* Medium Screen (Tablet) */
@@ -373,7 +670,6 @@ position: absolute;
 
   .banner-image {
     justify-self: center;
-    border: 2px solid black;
   }
 }
 
@@ -403,9 +699,7 @@ position: absolute;
 /* ✅ Small screen (phones) */
 @media (max-width: 576px) {
   .habits {
-    margin-left:200px;
     padding: 0.1rem;
-    border:2px solid black;
   }
 
   .habits-cards {
@@ -418,10 +712,145 @@ position: absolute;
     font-size: 1.5rem;
     margin: 0 auto;
   }
-
+ .habits-text{
+  margin-left: 120px;
+ }
+ .habits-cards{
+  margin-left:260px;
+  margin-bottom:40px
+ }
   .habits-text p {
     font-size: 0.8rem;
     max-width: 80%;
     margin: 0 auto;
   }
 }
+
+/* extramiless style */
+
+@media (max-width: 576px) {
+ .extra-mile{
+    margin-left:200px;
+    width: 353px;
+height: 631px;
+    display: grid;
+    grid-template-rows: 1fr;
+ }
+ .extra-content{
+    width: 156px;
+    height: 80px;
+    margin-top: -200px;
+ }
+ .extra-content h1{
+  font-weight: 900;
+    font-size: 1rem;
+ }
+
+ .extra-image img{
+    height: 250px;
+ }
+}
+/* Responsive grid adjustments */
+/* training style */
+@media (max-width: 992px) {
+  .training-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card2, .card4 {
+    grid-row: auto;
+    grid-column: auto;
+  }
+}
+/* Responsive fix */
+@media (max-width: 992px) {
+  .training-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card2, .card4 {
+    grid-row: auto;
+    grid-column: auto;
+  }
+}
+@media (max-width: 576px) {
+  .training-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 576px) {
+ 
+  .trainings-header{
+    width: 200px;
+    text-align: center;
+    display: block;
+    margin-left: 70px;
+  }
+
+  .training-grid {
+    grid-template-columns: repeat(2,1fr);
+    width:376px;
+  }
+
+  .card {
+    height: 200px;
+    width:150px;
+  }
+  .card6,.card5{
+    display: none;
+  }
+}
+
+/* Bmi calculator responsive */
+@media (max-width: 992px){
+  .bmi-cal-text{
+    text-align: start;
+    margin-right: 700px;
+    margin-bottom: 24px;
+  }
+  .bmi-cal-text p{
+    font-size: 12px;
+  }
+
+  .bmi-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .chart{
+    display: block;
+    width: 500px;
+    margin-left: 260px;
+  }
+  .calculate-bmi{
+    display: block;
+    width: 500px;
+    margin-left: 200px;
+  }
+}
+@media (max-width: 576px){
+  .bmi-cal-text{
+    text-align: start;
+    border:2px solid black;
+    margin-right: 900px;
+    margin-bottom: 24px;
+  }
+  .bmi-cal-text p{
+    font-size: 12px;
+  }
+
+  .bmi-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .chart{
+    display: block;
+    width: 500px;
+    margin-left: 150px;
+  }
+  .calculate-bmi{
+    display: block;
+    width: 500px;
+    margin-left: 120px;
+  }
+}
+
+
