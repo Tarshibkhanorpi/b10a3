@@ -4,9 +4,12 @@
     box-sizing: border-box;
     font-family: "poppins",sans-serif;
     /* background-color: rgb(136, 170, 101); */
+   
 }
 
-
+body{
+   background-color: black;
+}
 
 /* nav-bar style */
 .navbar{
@@ -19,27 +22,31 @@
       
 }
 .logo{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 900;
     color:#ff4b2b;
 }
 .nav-links{
     list-style:none;
     display: flex;
-    border-radius:20px;
+    border-radius:15px;
     gap:30px;
     padding: 5px 5px;
     font-weight: 800;
+    border:1px solid rgb(234, 229, 229);
 }
 .nav-links a {
   text-decoration: none;
-  color: #b32828;
+  color: #e8e2e2;
   font-weight: 500;
   transition: 0.3s;
+
 }
-.nav-links a:hover,
-.nav-links a.active {
-  color: #ff4b2b;
+.active{
+  background-color: orangered;
+  border-radius: 8px;
+  padding: 5px;
+  
 }
 #menu-btn{
     display: none;
@@ -61,11 +68,12 @@
 }
 .banner-content h1 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.8;
+  color: rgb(247, 243, 243);
 }
 .banner-content .shape {
-  font-family: "Brush Script MT", cursive;
+  font-family: "Italianno", cursive;
   font-size: 3.2rem;
   color: #ff4b2b;
 }
@@ -96,14 +104,14 @@
   background-color: #e24326;
 }
 .btn.download {
-  background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
+  border: 6px solid #f4eeee;
+  color: #ffffff;
+  font-weight: 700;
 }
 
-.btn.download:hover {
-  background: #625f5f;
-  color: #000;
+.btn.download {
+  background: #0a0909;
+  color: #d9cfcf;
 }
 
 /* banner image */
@@ -144,13 +152,13 @@
 }
 /* Specific positions */
 .tag-left {
-  bottom: 20px;
+  bottom: 130px;
   left: -30px;
 }
 
 .tag-right {
 position: absolute;
- background: rgba(193, 69, 69, 0.1);
+ background:  rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   border-radius: 10px;
   padding: 12px 20px;
@@ -162,11 +170,12 @@ position: absolute;
      font-size: 1.7rem;
   font-weight: 900;
   display: block;
-  color: #fff;
+  color: #f1eeee;
 }
 .tag-right p {
   font-size: 0.9rem;
-  color: #aaa;
+  font-weight: 600;
+  color: #a29f9f;
 }
 
 /* habit er section style */
@@ -187,8 +196,8 @@ position: absolute;
 }
 
 .habits-text h1 {
-  font-size: 3.125rem; /* 50px */
-  color: blue;
+  font-size: 3rem; /* 50px */
+  color: rgb(228, 228, 231);
   font-weight: 900;
   margin-bottom: 1.25rem; /* 20px */
 }
@@ -196,7 +205,7 @@ position: absolute;
 .habits-text p {
   font-size: 1rem; /* 16px */
   font-weight: 500;
-  color: #bfbfbf;
+  color: #e6e1e1;
   line-height: 1.6;
   max-width: 37.5rem; /* 600px */
   margin: 0 auto 2.5rem; /* bottom 40px */
@@ -209,15 +218,26 @@ position: absolute;
     margin-left: 152px;
     margin-right: 148px;
     padding-left:30px;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 .habits-cards{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     margin:0 auto;
+    position: relative;
 }
-.card h3,.card p{
+.card h3{
     text-align: center;
+    color:rgb(255, 252, 252);
+    font-weight: 900;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.card p{
+  position: absolute;
+  top:220px;
+
+  color:rgb(220, 203, 203);
 }
 .card img {
   display: block;
@@ -285,7 +305,7 @@ position: absolute;
   margin-left:152px;
   margin-right: 152px;
   padding: 0 2rem;
-  color: #7b1919;
+  color: #f1efef;
   
 }
 
@@ -391,11 +411,10 @@ position: absolute;
 }
 /* bmi calculator section */
 .Bmi-cal {
-  color: rgb(33, 17, 17);
+  color: rgb(203, 194, 194);
   padding: 40px 0;
-  margin-bottom: 24px;
   width: 1600px;
-  height: 900px;
+  height: 700px;
 }
 .bmi-cal-text h1 {
   font-size: 36px;
@@ -413,7 +432,7 @@ position: absolute;
 .bmi-container {
   display: flex;
   justify-content: space-around;
-  background-color: gray;
+  background-color:#222222;
   color:white;
 }
 .chart {
@@ -521,6 +540,170 @@ position: absolute;
 .form-button:hover {
   background-color: #e55e50;
 }
+/* 
+Meet out team section style */
+
+.meet-our-team {
+  color: rgb(214, 212, 212);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.team-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.team-text p {
+  font-size: 16px;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 18px;
+background-color: rgb(214, 202, 202);
+  width: 70%;
+  margin-left: 160px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.team-cards {
+  display: grid; /* Using grid instead of flex */
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* Individual Card */
+.cards {
+   background-color: #ede6e6;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-size: cover; /* Ensure the image covers the card */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+  width: 342px; /* Ensure the image doesn't repeat */
+  height: 350px; /* Fixed height for the card */
+  display: flex;
+  justify-content: flex-end; /* Align content at the bottom */
+  flex-direction: column;
+}
+.cards1{
+  background-image:url(./images/trainer1.png) ;
+}
+.cards2{
+  background-image:url(./images/trainer2.png) ;
+}
+.cards3{
+  background-image: url(./images/trainer3.png);
+}
+.cards4{
+  background-image: url(./images/trainer4.png);
+}
+.cards5{
+  background-image:url(./images/trainer5.png) ;
+}
+.cards6{
+  background-image: url(./images/trainer6.png);
+}
+
+.cards img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.cards h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: start;
+}
+.cards p {
+  font-size: 14px;
+  color: #ccc;
+  text-align: start;
+}
+
+.cards:hover {
+  transform: translateY(-10px);
+}
+
+/* footer section style */
+.footer {
+  background-color: #222222;
+  color: white;
+ /* Frame 56 */
+width: 100%;
+height: 800px;
+}
+
+
+.footer ul {
+  list-style-type: none;
+  
+}
+
+
+.footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  color: #ff6f61;
+}
+.footer-container{
+  margin-left: 150px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 200px;
+  gap:50px;
+}
+.content1 h1{
+ font-size: 50px;
+ font-weight:900;
+ color: #c90606;
+}
+.content1 p{
+  font-size:15px;
+}
+.content2 {
+  width: 150px;
+  height: 280px;
+  line-height: 3rem;
+  font-weight: 400;
+  
+}
+.footer-line {
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  width: 60%;
+  margin-left: 300px;
+
+}
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+  width: 100%;
+}
+
+
 
 /* nav ar banner er responsive */
 /* Medium Screen (Tablet) */
@@ -705,7 +888,7 @@ position: absolute;
   .habits-cards {
     display: grid;
     grid-template-columns: 1fr; /* এক কলাম (mobile) */
-    gap: 20px;
+    gap: 30px;
   }
 
   .habits-text h1 {
@@ -719,9 +902,12 @@ position: absolute;
   margin-left:260px;
   margin-bottom:40px
  }
+ .habits-cards img{
+  width: 100%;
+ }
   .habits-text p {
     font-size: 0.8rem;
-    max-width: 80%;
+    max-width:100%;
     margin: 0 auto;
   }
 }
@@ -829,7 +1015,6 @@ height: 631px;
 @media (max-width: 576px){
   .bmi-cal-text{
     text-align: start;
-    border:2px solid black;
     margin-right: 900px;
     margin-bottom: 24px;
   }
@@ -852,5 +1037,83 @@ height: 631px;
     margin-left: 120px;
   }
 }
+/* 
+meet our team style */
+@media (max-width: 992px){
+.meet-our-team{
+  margin-top: 500px;
+  width: 80%;
+  height: 1300px;
+  margin-left: 90px;
+}
+.team-container{
+    background-color: transparent; 
+}
+.team-cards{
+  width: 800px;
+height: 1085px;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+margin-right: 150px;
+background-color: #989191;
+margin-left: 100px;
+margin-bottom: 20px;
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+padding-top: 10px;
+border-radius: 5px;
+}
+.cards{
+  width: 300px;
+}
 
+}
+@media (max-width: 576px){
 
+.team-cards{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  border:2px solid black;
+  height: 2200px;
+  margin-right: 300px;
+}
+
+}
+
+/* Media Queries for Medium Devices (tablets) */
+@media screen and (max-width: 992px) {
+  .footer{
+    width: 100%;
+    height: 1500px;
+    margin-top: 100px;
+  }
+  .footer-container {
+    display: flex; 
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content */
+    margin-left: 0; /* Reset margin on smaller screens */
+  }
+
+  .content1 {
+    width: 100%; /* Take full width on smaller screens */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Add space between the sections */
+  }
+  .content3{
+    display: none;
+  }
+
+  .footer-line {
+    margin-left: 150px;
+    
+  }
+  .hr{
+    margin-bottom: 1000px;
+  }
+}
+@media (max-width: 576px){
+  .footer{
+    margin-top:1134px;
+  }
+}
